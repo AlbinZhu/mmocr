@@ -8,10 +8,10 @@ _base_ = [
     '../../_base_/schedules/schedule_sgd_160e.py'
 ]
 
-img_prefix = 'ocr_data/ocr_dataSet'
-train_ann_file = 'ocr_data/annoDir/ImageSet/ocr_train.txt'
-val_ann_file = 'ocr_data/annoDir/ImageSet/ocr_val.txt'
-dict_file = 'ocr_data/ocr_dataSet/dict.txt'
+img_prefix = 'ocr_data/'
+train_ann_file = 'ocr_data/ocr_train.txt'
+val_ann_file = 'ocr_data/ocr_val.txt'
+dict_file = 'ocr_data/dict.txt'
 
 label_convertor = dict(
     type='CTCConvertor', dict_type='DICT36', with_unknown=False, lower=True, dict_file=dict_file)
